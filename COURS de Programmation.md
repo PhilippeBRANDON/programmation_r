@@ -4,8 +4,7 @@
  
   | STID 1 - Programmation Statistique  
   | TD1  
-  | GitHub et introduction à R
-author: "Anthony SARDELLITTI"
+  
 output: 
   pdf_document:
     toc: true
