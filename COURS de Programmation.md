@@ -3,13 +3,8 @@
 ---
  
   | STID 1 - Programmation Statistique  
-  | TD1  
+  | TD1   | 
   
-output: 
-  pdf_document:
-    toc: true
-    number_sections: true
-    toc_depth: 3
 date: "2023-01-01"
 ---
 
