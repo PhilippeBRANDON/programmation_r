@@ -1,7 +1,7 @@
 # Cours de Programmation R
 
 ---
-title: | 
+ 
   | STID 1 - Programmation Statistique  
   | TD1  
   | GitHub et introduction à R
