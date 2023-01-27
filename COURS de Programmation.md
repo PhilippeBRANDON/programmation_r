@@ -5,12 +5,10 @@
   | STID 1 - Programmation Statistique  
   | TD1   | 
   
-date: "2023-01-01"
+date: "2023-01-27"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 
 
