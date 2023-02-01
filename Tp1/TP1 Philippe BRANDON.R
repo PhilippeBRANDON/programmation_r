@@ -1,3 +1,5 @@
+
+
 # 2.1.1 Créer une fonction qui retourne le salaire net avant impot pour les non cadres 
 brutToNet1 <- function(brut) {
   if (!is.numeric(brut)) {
@@ -38,4 +40,19 @@ brutToNet3 <- function(brut, contrat, taux = 0.075, temps = 100) {
   Netavantimpot <- brut - cotisations
   Netapresimpot <- Netavantimpot - impots
   return(list(Netavantimpot = Netavantimpot, Netapresimpot = Netapresimpot))
+}
+
+#2.2
+netAnnuelToImpot <- function(salaire) {
+  # définir les tranches d'imposition
+  tranches <- c(0, 9700, 27700, 81700, 178700, 373300, Inf)
+  taux <- c(0, 0.1, 0.12, 0.22, 0.24, 0.32, 0.35, 0.37)
+  
+  # trouver la tranche correspondant au salaire
+  tranche <- tranches[which(salaire < tranches)[1]]
+  
+  # calculer l'impôt pour la tranche correspondante
+  impot <- (salaire - tranche) * taux[which(tranche == tranches)]
+  
+  return(impot)
 }
